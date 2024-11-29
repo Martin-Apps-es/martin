@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@700&family=Roboto:wght@500&family=Open+Sans:wght@400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #003366; /* Azul oscuro */
+    line-height: 1.6;
+}
+
+/* Estilos del encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #003366;
+    position: fixed; /* Fija el menú superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Agrega un efecto de sombra */
+}
+
+/* Estilos del logo y su enlace */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Elimina subrayados */
+}
+
+.profile-image {
+    width: 60px; /* Tamaño fijo */
+    height: 60px;
+    object-fit: contain; /* Mantiene la relación de aspecto */
+    margin-right: 10px; /* Espaciado entre la imagen y el texto */
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/* Estilos del menú */
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav .button {
+    background-color: white;
+    color: #003366;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav .button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos del contenido principal */
+.main-content {
+    text-align: center;
+    padding: 100px 20px; /* Ajusta el relleno para evitar que el contenido se superponga con el menú */
+}
+
+.main-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.description {
+    background-color: white;
+    color: #003366;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify; /* Justifica el texto */
+}
+
+.description p {
+    margin-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <a href="index.html" class="logo-link">
+            <img src="https://lh4.googleusercontent.com/4NtCcJPYfYI2kJakqzTLXudOAjB6bFyudRWSiG7pIz8malG3KFpLobGGbOvMB5NzzGgO2CRl_6RD2BuVcZNvNdM=w1280" alt="Imagen de perfil" class="profile-image">
+            <span class="name">Martín Gómez-Acebo</span>
+          </a>
+        </div>
+        <nav class="nav">
+            <a href="#portfolio">Portfolio</a>
+            <a href="#aplicaciones">Aplicaciones</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#iniciar-sesion" class="button">Iniciar sesión</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <h1>Hola, soy Martín</h1>
+        <div class="description">
+            <p>
+                Soy un joven desarrollador de software de 14 años, apasionado por la tecnología y la programación.
+                Con más de dos años de experiencia en la creación de proyectos, he desarrollado habilidades en HTML, CSS,
+                y JavaScript para construir páginas web y aplicaciones interactivas, así como en programación con C++ para
+                proyectos con Arduino, utilizando el simulador de circuitos Tinkercad.
+            </p>
+            <p>
+                Además de mi aprendizaje autodidacta, he cursado asignaturas como Tecnología y Digitalización y Ciencias
+                de la Computación en mi colegio, lo que ha fortalecido mi conocimiento y comprensión de diversas herramientas
+                y tecnologías. Entre mis proyectos más destacados se encuentran Arimo, Martin Games, Martin Browser, y BitLink,
+                donde he podido combinar mi interés por la creación de sistemas útiles con la experimentación en tecnologías emergentes,
+                como la inteligencia artificial.
+            </p>
+        </div>
+    </main>
+</body>
+</html>
